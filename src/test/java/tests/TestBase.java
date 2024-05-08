@@ -16,8 +16,6 @@ public class TestBase {
     public static void setUp() {
         DriverConfig driverConfig = ConfigFactory.create(DriverConfig.class);
         RestAssured.baseURI = "https://petstore.swagger.io/v2";
-        Configuration.browserVersion = driverConfig.browserVersion();
-        Configuration.browserSize = driverConfig.browserSize();
         Configuration.remote = driverConfig.browserRemoteUrl();
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
