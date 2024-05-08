@@ -81,7 +81,7 @@ ${TASK}
 </p>
 После выполнения сборки, в блоке <code>Build History</code> напротив номера сборки появятся значки <code>Allure Report</code> и <code>Allure TestOps</code>, при клике на которые откроется страница с html-отчетом и тестовой документацией.
 
-## <img width="4%" style="vertical-align:middle" title="Allure Report" src="media/logo/Allure_Report.svg"> [Пример](https://jenkins.autotests.cloud/job/graduate_Work_Qa_Guru_24_Ezotik/15/allure) Allure-отчёта
+## <img width="4%" style="vertical-align:middle" title="Allure Report" src="media/logo/Allure_Report.svg"> [Пример](https://jenkins.autotests.cloud/job/graduate_Work_Qa_Guru_24_Ezotik_Api/3/allure) Allure-отчёта
 
 <p align="center">
 <img title="Общий вид отчёта Allure" src="media/images/AllureOverview.png">
@@ -91,10 +91,8 @@ ${TASK}
 
 * Тест-кейсы, разделённые на папки по сьютам;
 * Описание шагов тестов;
-* Скриншот страницы на последнем шаге;
-* Page Source;
-* Логи браузерной консоли;
-* Видео выполнения автотеста.
+* Request запрос в каждом шаге с телом запроса Body;
+* Status code ответа.
 
 ### Раздел Suites
 
@@ -108,7 +106,7 @@ ${TASK}
 <img title="Раздел Behaviors отчёта Allure" src="media/images/AllureBehaviors.png">
 </p>
 
-## <img width="4%" style="vertical-align:middle" title="Allure TestOps" src="media/logo/AllureTestOps.svg"> [Интеграция](https://allure.autotests.cloud/project/4180/dashboards) с Allure TestOps
+## <img width="4%" style="vertical-align:middle" title="Allure TestOps" src="media/logo/AllureTestOps.svg"> [Интеграция](https://allure.autotests.cloud/project/4220/dashboards) с Allure TestOps
 
 На *Dashboard* в <code>Allure TestOps</code> видна статистика количества тестов: сколько из них добавлены и проходятся вручную, сколько автоматизированы. Новые тесты приходят по интеграции при каждом запуске сборки вместе с результатами их прохождения.
 
@@ -122,7 +120,7 @@ ${TASK}
 <img title="Результаты теста в Allure TestOps №1" src="media/images/TestOpsResults1.png">
 </p>
 
-## <img width="4%" style="vertical-align:middle" title="Jira" src="media/logo/Jira.svg"> [Интеграция](https://jira.autotests.cloud/browse/HOMEWORK-1193) с Jira
+## <img width="4%" style="vertical-align:middle" title="Jira" src="media/logo/Jira.svg"> [Интеграция](https://jira.autotests.cloud/browse/HOMEWORK-1216) с Jira
 
 Реализована интеграция <code>Allure TestOps</code> с <code>Jira</code>, в тикете отображаются привязанные тест-кейсы и результаты их запусков.
 
@@ -138,12 +136,6 @@ ${TASK}
 <img width="50%" title="Уведомление в Telegram" src="media/images/Bot.png">
 </p>
 
-## <img width="4%" style="vertical-align:middle" title="Selenoid" src="media/logo/Selenoid.svg"> Видео запуска тестов в Selenoid
-
-В отчетах Allure для каждого теста прикреплён не только скриншот, но и видео прохождения теста, записанное Selenoid.
-<p align="center">
-  <img title="Видео, записанное Selenoid" src="media/video/Video.gif">
-</p>
 
 
 
