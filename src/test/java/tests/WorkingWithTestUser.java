@@ -13,6 +13,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static specs.ApiSpecs.*;
 
 @Tag("api_test")
+@DisplayName("Тесты на операции с новым пользователем")
 public class WorkingWithTestUser extends TestBase {
 
     private final String Username = "vesna2404";
