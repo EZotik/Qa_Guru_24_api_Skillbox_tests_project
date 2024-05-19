@@ -3,7 +3,7 @@ package models;
 import lombok.Data;
 
 @Data
-public class ApiCreateUserResponseModel {
+public class ApiUserResponseModel {
     String code, type, message;
 
 }

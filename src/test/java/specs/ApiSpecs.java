@@ -1,7 +1,6 @@
 package specs;
 
 import io.restassured.builder.ResponseSpecBuilder;
-import io.restassured.http.ContentType;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
 
@@ -13,19 +12,6 @@ import static io.restassured.http.ContentType.JSON;
 
 
 public class ApiSpecs {
-    public static RequestSpecification basicRequestSpec = with()
-            .filter(withCustomTemplates())
-            .log().method()
-            .log().uri()
-            .log().body()
-            .contentType(ContentType.JSON);
-
-    public static ResponseSpecification responseSpec200 = new ResponseSpecBuilder()
-            .expectStatusCode(200)
-            .log(STATUS)
-            .log(BODY)
-            .build();
-
     public static RequestSpecification getUserRequestSpec = with()
             .filter(withCustomTemplates())
             .log().uri()
